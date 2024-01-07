@@ -20,6 +20,7 @@ p{
     margin: 30px 50px;
     border-top: 1px solid red;
     border-bottom: 1px solid red;
+    border-radius: 15px;
 }
 
 .btndiv{
@@ -40,10 +41,11 @@ p{
 }
 
 .btnspan a:hover{
-    border: 2px solid red;
     font-weight: 800;
-    background-color: rgb(249, 245, 241);
-    padding: 15px 15px;
+    background-color: #8efc65;
+    color: rgb(39, 33, 33);
+    font-size: 19px;
+    padding: 12px;
 }
 
 
