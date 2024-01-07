@@ -16,16 +16,16 @@ p{
 }
 
 .continer{
-    padding: 20px;
-    margin: 30px 50px;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
+    padding: 30px 10px;
+    margin: 10px 50px;
+    border-top: 2px solid #f03737;
+    border-bottom: 2px solid #f03737;
     border-radius: 12px;
 }
 
 .btndiv{
-        padding: 20px;
-        margin: 30px 50px;
+        padding: 10px;
+        margin: 20px 50px;
 }
 
 .btnspan{
