@@ -41,8 +41,9 @@ p{
 
 .btnspan a:hover{
     border: 2px solid red;
-    font-weight: 900;
+    font-weight: 800;
     background-color: rgb(249, 245, 241);
+    padding: 10px 10px;
 }
 
 
