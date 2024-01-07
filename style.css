@@ -39,11 +39,11 @@ p{
     font-weight: bold;
 }
 
-.btnspan a:hover{
+.btnspan a: hover{
     border: 2px solid red;
     font-weight: 800;
     background-color: rgb(249, 245, 241);
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 
