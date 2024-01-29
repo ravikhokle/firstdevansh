@@ -52,6 +52,7 @@ p{
     background-color: rgb(255, 255, 255);
     max-width: 100px;
     padding: 10px;
+    margin: 10px;
 }
 .btnbody>a{
     text-decoration: none;
