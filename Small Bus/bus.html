@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus</title>
+    <style>
+        
+        .busbody{
+            width: 300px;
+            height: 110px;
+            background-color: #ffc503;
+            display: inline-block;
+            border-top-right-radius: 15px;
+            position: relative;
+            left: 10px;
+        }
+        .linetop{
+            border: black 2px solid;
+            position: relative;
+            top: 10px;
+            left: 13px;
+            width: 283px;
+            border-start-end-radius: 20px;
+            border-end-end-radius: 20px;
+        }
+        .window>span{
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            background-color: black;
+            position: relative;
+            top: 20px;
+            left: 13px;
+            border: 2px solid;
+            display: inline-block;
+        }
+        .steps{
+            width: 22px;
+            height: 22px;
+            background-color: transparent;
+            position: relative;
+            top: 25px;
+            left: 13px;
+            border: 2px solid;
+            display: inline-block;
+        }
+        .bottomline1{
+            position: relative;
+            left:14px;
+            top:5px;
+            width: 250px;
+            border: solid 3px black;
+            display: inline-block;
+        }
+        .bottomline2{
+            position: relative;
+            left:43px;
+            top:6px;
+            width: 250px;
+            border: solid 3px black;
+            display: inline-block;
+        }
+        .bottomline3{
+            position: relative;
+            left:43px;
+            top:6px;
+            width: 140px;
+            border: solid 3px black;
+            display: inline-block;
+        }
+        .bottomline4{
+            position: relative;
+            left:72px;
+            top:6px;
+            width: 72px;
+            border: solid 3px black;
+            display: inline-block;
+        }
+        .hexa1{
+            color: red;
+            font-size: 35px;
+            position: relative;
+            top: -60px;
+            left: 42px;
+            z-index: 1;
+        }
+        .hexa2{
+            color: white;
+            font-size: 40px;
+            position: relative;
+            top: -58px;
+            left: 4.5px;
+        }
+        .stopname{
+            position: relative;
+            top: -99px;
+            left: -343px;
+            z-index: 2;
+            font-size: 7px;
+            font-weight: 800;
+            color: black;
+        }
+
+        .busfront{
+            height: 50px;
+            width: 43px;
+            background-color: #ffc503;
+            display: inline-block;
+            position: relative;
+            top: -90px;
+            left: 15px;
+            border-left: solid #ffc503 2px;
+            border-top-left-radius: 10px;
+        }
+
+        .tayer{
+            height: 20px;
+            width: 20px;
+            border:5px solid black;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px black;
+            animation: spin;
+            animation-duration: 25s;
+        }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+        }
+        
+        .tayer#t1{
+            position: relative;
+            top: 34px;
+            left: 18px;
+            z-index: 2;
+        }
+        .tayer#t2{
+            position: relative;
+            top: -55px;
+            left: 190px;
+            z-index: 2;   
+        }
+
+        .btmright{
+            position: relative;
+            top: -86px;
+            left: 290px;
+            width: 10px;
+            height: 16px;
+            background-color: black;
+        }
+        .btmleft{
+            position: relative;
+            top: 5px;
+            left: -6px;
+            width: 10px;
+            height: 16px;
+            background-color: black;
+        }
+        
+        .topleft{
+           width: 6px; 
+           height: 8px;
+           background-color: #ffc503;
+           position: relative;
+           top: -195px;
+           left: -4px;
+           border-top-left-radius: 3px;
+        }
+        
+        .schoolbus{
+            position: relative;
+            top: -96px;
+            left: -210px;
+            text-transform: uppercase;
+            font-weight: 550;
+            font-family: Arial,'Times New Roman', serif;
+            font-size: 14px;
+        }
+        
+        .frontglass{
+            height: 18px;
+            width: 6px;
+            background-color: black;
+            position: relative;
+            top: -90px;
+            left: 30px;
+        }
+        .glassline{
+            height: 10px;
+            width:  3px;
+            background-color: black;
+            position: relative;
+            top: -111px;
+            left: 38px;
+            transform: rotate(60deg);
+        }
+        
+        .fronttaper{
+            height: 55px;
+            width:  30px;
+            background-color: #ffc503;
+            border-bottom-left-radius: 10px;
+            position: relative;
+            top: -91px;
+            left: 14px;
+            transform: rotate(80deg);
+        }
+
+        .bus{
+            right: 0px;
+            margin: 0px;
+            margin-top:200px;
+            margin-bottom: -198.5px;
+            position: relative;
+            animation-name: run;
+            animation-duration: 15s;
+        }
+
+        /* @keyframes run{
+    100%   {right:0px; left:0px;}
+    0%  {right:0px; left:100%;}
+} */
+
+
+ @keyframes run {
+  1% {left:1200px; bottom:0px;}
+  10% {left:1100px; bottom:0px;}
+  30% {left:1050px; bottom:110px;}
+  40% {left:650px; bottom:110px;}
+  50% {left:550px; bottom:0px;}
+  70% {left:440px; bottom:0px;}
+  80% {left:400px; bottom:110px;}
+  90% {left:50px; bottom:110px;}
+  100%{left:0px; bottom:0px;}
+} 
+
+        .myname{
+            text-align: center;
+            color:rgb(0, 21, 255);
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+        .mountain{
+            border-bottom: 5px solid rgb(112, 31, 31);  
+            width: 100%;
+        }
+        .claimb1{
+            position: relative;
+            left: 400px;
+            top: 5px;
+            width: 10px;
+            height: 100px;
+            background-color: brown;
+            display: inline-block;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        .claimb2{
+            position: relative;
+            left: 950px;
+            top: 5px;
+            width: 10px;
+            height: 70px;
+            background-color: brown;
+            display: inline-block;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        .claimb3{
+            position: relative;
+            left: 1000px;
+            top: 5px;
+            width: 10px;
+            height: 100px;
+            background-color: brown;
+            display: inline-block;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        .tayerline1{
+            text-align: center;
+            position: relative;
+            left: 8.5px;
+            top: 1px;
+            width: 10px;
+            height: 15px;
+            border: 2px solid black;
+        }
+        .tayerline2{
+            text-align: center;
+            position: relative;
+            top: -20px;
+            left: -1px;
+            width: 25px;
+            height: 10px;
+            border-top: 3.5px solid black;
+            transform: rotate(180deg);
+        }
+        .tayerupright{
+            position: relative;
+            top: -99.2px;
+            left: 263px;
+            transform: translate(-50%, -50%);
+            height: 19px;
+            width: 35px;
+            border-radius: 150px 150px 0 0;
+            background-color: white;
+        }
+        .tayerupleft{
+            position: relative;
+            top: -88px;
+            left: 32px;
+            transform: translate(-50%, -50%);
+            height: 19px;
+            width: 35px;
+            border-radius: 150px 150px 0 0;
+            background-color: white;
+            z-index: 1;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1 class="myname">Flying Bus</h1>
+
+ 
+    <div class="bus">
+        <div class="busfront">
+            <div class="tayer" id="t1">
+                <span class="tayerline1"></span>
+                <div class="tayerline2"></div>
+            </div>
+            <div class="btmleft"></div>
+            <div class="frontglass"></div>
+            <div class="glassline"></div>
+            <div class="fronttaper"></div>
+            <div class="tayerupleft"></div>
+        </div>
+        <div class="busbody">
+            <div class="linetop"></div>
+            <div class="window">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="steps"></div>
+            <div class="bottomline1"></div>
+            <div class="bottomline2"></div>
+            <div class="bottomline3"></div>
+            <div class="bottomline4"></div>
+            <div class="hexagon">
+                <span class="hexa1">&#11203;</span>
+                <span class="hexa2">&#11203; </span>
+                <div class="tayer" id="t2">
+                    <span class="tayerline1"></span>
+                    <div class="tayerline2"></div>
+                </div>
+                <div class="btmright"></div>
+                <div class="topleft"></div>
+            </div>
+        </div>
+        <span class="schoolbus">School Bus</span>
+        <span class="stopname">STOP</span>
+        <div class="tayerupright"></div>
+    </div>
+    </div>
+    
+    <div class="mountain">
+        <span class="claimb1"></span>
+        <span class="claimb2"></span>
+        <span class="claimb3"></span>
+    </div>
+
+</body>
+</html>
