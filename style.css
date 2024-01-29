@@ -16,16 +16,15 @@ p{
 }
 
 .continer{
-    padding: 30px 10px;
-    margin: 10px 50px;
-    border-top: 2px solid #f03737;
-    border-bottom: 2px solid #f03737;
-    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 50px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
 }
 
 .btndiv{
-        padding: 10px;
-        margin: 20px 50px;
+        padding: 20px;
+        margin: 30px 50px;
 }
 
 .btnspan{
@@ -40,12 +39,26 @@ p{
     font-weight: bold;
 }
 
-.btnspan a:hover{
+.btnspan a: hover{
+    border: 2px solid red;
     font-weight: 800;
-    background-color: #8efc65;
-    color: rgb(39, 33, 33);
-    font-size: 19px;
-    padding: 12px;
+    background-color: rgb(249, 245, 241);
+    padding: 10px;
+}
+
+.btnbody{
+    text-align: center;
+    border: 2px solid red;
+    background-color: rgb(255, 255, 255);
+    max-width: 100px;
+    padding: 10px;
+}
+.btnbody>a{
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
